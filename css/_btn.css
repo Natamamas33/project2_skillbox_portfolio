@@ -1,0 +1,112 @@
+.btn {
+  display: inline-block;
+  padding: 20px;
+  border-radius: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: var(--white);
+  outline: none;
+  background-color: var(--orange);
+  cursor: pointer;
+  transition: background-color .3s ease;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background-color: var(--orange-hov);
+}
+
+.btn:active:not(:hover) {
+  background-color: var(--orange-act);
+}
+
+.about__btn {
+  max-width: 175px;
+  padding: 19px 38px;
+  border: 3px solid var(--orange);
+  border-radius: 16px;
+  text-align: center;
+  background-color: transparent;
+  transition: background-color .3s ease border-color .3s ease;
+}
+
+.about__btn:hover {
+  border-color: var(--orange);
+  background-color: var(--orange);
+}
+
+.about__btn:focus-visible:not(:hover):not(:active) {
+  border-color: var(--orange);
+  background-color: var(--orange);
+}
+
+.about__btn:active:not(:hover) {
+  border-color: var(--orange-act);
+  background-color: var(--orange-act);
+}
+
+.btn--big {
+  max-width: 400px;
+  min-height: 78px;
+  padding: 25px 40px;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.btn-def {
+  display: inline-block;
+  max-width: 147px;
+  max-height: 60px;
+  padding: 20px 38px;
+  border: 1px solid var(--black);
+  border-radius: 16px;
+  font-weight: 400;
+  color: var(--black);
+  text-align: center;
+  background-color: transparent;
+  transition: background-color .3s ease color .3s ease border-color .3s ease;
+}
+
+.btn-def:hover {
+  border-color: var(--grey-dark);
+  color: var(--white);
+  background-color: var(--grey-dark);
+}
+
+.btn-def:focus-visible:not(:hover):not(:active) {
+  border-color: var(--grey-dark);
+  color: var(--white);
+  background-color: var(--grey-dark);
+}
+
+.btn-def:active:not(:hover) {
+  border-color: var(--black);
+  color: var(--white);
+  background-color: var(--black);
+}
+
+@media (max-width: 576px) {
+  .btn {
+    min-height: auto;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .about__btn {
+    min-width: 162px;
+    padding: 10px 42px;
+    border: 2px solid var(--orange);
+    border-radius: 8px;
+    color: var(--orange);
+  }
+
+  .btn-def {
+    min-width: 118px;
+    padding: 12px 32px;
+  }
+}
